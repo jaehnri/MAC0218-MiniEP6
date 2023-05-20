@@ -1,0 +1,12 @@
+1001  docker build .
+1002  docker run de4395169330d6a2855709013f78e1b5ae3e7636a61e43f071e9c3961dfe149e
+1003  docker run -p 80:80 de4395169330d6a2855709013f78e1b5ae3e7636a61e43f071e9c3961dfe149e
+1004  docker build .
+1005  docker run -p 8000:80 1dd7026271c7d020 
+...
+1012  docker build . -t miniep6:latest
+1013  docker run -p 8080:80 -v pages/:/usr/src/pages/ miniep6:latest
+1014  docker run -p 8080:80 -v pages:/usr/src/pages/ miniep6:latest
+1015  docker run -p 8080:80 -v pages:/usr/src/pages miniep6:latest
+1016  docker run -p 8080:80 -v /Users/joaohenri/USP/7 Semestre/MAC0218/mini-eps/MAC0218-MiniEP6/pages:/usr/src/pages miniep6:latest
+1017  docker run -p 8080:80 -v $PWD/pages:/usr/src/pages miniep6:latest
